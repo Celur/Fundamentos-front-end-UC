@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+/* ESTILOS DEL ENCABEZADO*/
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contacto{
+    font: inherit;
+}
+
+.contacto__lista{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* ESTILOS DE HERRAMIENTAS*/
+.herramientas{
+    padding: 1rem 0;
+}
+
+.herramientas__titulo{
+    text-align: center;
+}
+
+.herramientas__lista{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* ESTILOS DE EXPERIENCIA LABORAL*/
+.experiencia{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr auto ;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.experiencia__titulo{
+    grid-column: 1 / 4;
+    grid-row: 1;
+    text-align: center;
+}
+
+.experiencia__empresa,
+.experiencia__puesto{
+    text-align: center;
+}

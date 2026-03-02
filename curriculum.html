@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <title>cv - Uriel Celli</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>CV - Uriel Celli</title>
 </head>
 <body>
     <header>
-        <section>
-            <h1>Uriel Celli</h1>
-            <p>Desarrollador Web Jr. | Frontend</p>
+        <section class="encabezado">
+            <h1 class="encabezado__nombre">Uriel Celli</h1>
+            <p class="encabezado__titulo">Desarrollador Web Jr. | Frontend</p>
         </section>
-        <address>
-            <ul>
-                <li><i class="bi bi-phone" aria-hidden="true"></i>+54 11 6911-5318</li>
-                <li><i class="bi bi-geo-alt" aria-hidden="true"></i>Vicente Lopez, Buenos Aires</li>
-                <li><i class="bi bi-envelope-at" aria-hidden="true"></i>urielcelli.ok@gmail.com</li>
+        <address class="contacto">
+            <ul class="contacto__lista">
+                <li><i class="bi bi-phone" aria-hidden="true"></i> +54 11 6911-5318</li>
+                <li><i class="bi bi-geo-alt" aria-hidden="true"></i> Vicente Lopez, Buenos Aires</li>
+                <li><i class="bi bi-envelope-at" aria-hidden="true"></i> urielcelli.ok@gmail.com</li>
             </ul>
         </address>
     </header>
@@ -32,37 +34,37 @@
                 soluciones bien estructuradas y mantenibles.
             </p>
         </section>
-        <section>
-                <h2>Herramientas</h2>
-                <ol>
-                    <li><img src="img/html-5.png" alt="HTML"></li>
-                    <li><img src="img/css-3.png" alt="CSS"></li>
-                    <li><img src="img/js.png" alt="JavaScript"></li>
-                    <li><img src="img/c++.png" alt="C++"></li>
+        <section class="herramientas">
+                <h2 class="herramientas__titulo">Herramientas</h2>
+                <ol class="herramientas__lista">
+                    <li class="herramientas__html"><img src="img/html-5.webp" alt="HTML"></li>
+                    <li class="herramientas__css"><img src="img/css-3.webp" alt="CSS"></li>
+                    <li class="herramientas__js"><img src="img/js.webp" alt="JavaScript"></li>
+                    <li class="herramientas__c++"><img src="img/c++.webp" alt="C++"></li>
                 </ol>
         </section>
-        <section>
-            <h2>Experiencia</h2>
-            <article>
+        <section class="experiencia">
+            <h2 class="experiencia__titulo">Experiencia</h2>
+            <article class="experiencia__item">
                 <header>
-                    <h3>Revisor de Presunciones</h3>
-                    <p>
+                    <h3 class="experiencia__puesto">Revisor de Presunciones</h3>
+                    <p class="experiencia__empresa">
                         <strong>Atlantics</strong>
                         (<time datetime="2025">2025</time> - Actualidad)
                     </p>
                 </header>
-                <p>Principales responsabilidades: </p>
-                    <ul>
+                <p class="experiencia__descripcion">Principales responsabilidades: </p>
+                    <ul class="experiencia__lista">
                         <li><strong>Control y validación</strong> manual de imágenes provenientes de sistemas de monitoreo vial, <em>asegurando el cumplimiento de criterios de calidad.</em></li>
                         <li><strong>Detección y reporte</strong> de incidencias operativas y fallas de imagen, garantizando la <em>confiabilidad de los datos procesados.</em></li>
                         <li>Confirmación o descarte de eventos detectados por sistemas automáticos de fiscalización.</li>
                     </ul>
                 <footer>
-                    <h4>Aptitudes</h4>
-                    <small>Atención al detalle - Observación</small>
+                    <h4 class="experiencia__aptitudes-titulo">Aptitudes</h4>
+                    <small class="experiencia__aptitudes">Atención al detalle - Observación</small>
                 </footer>
             </article>
-            <article>
+            <article class="experiencia__item">
                 <header>
                     <h3>Operador de servicios de atención al cliente</h3>
                     <p>
@@ -91,7 +93,7 @@
                     <small>Feedback - Comunicación - Asesoramiento y orientación - Procesos de onbording - Experiencia del cliente - Toma de decisiones</small>
                 </footer>
             </article>
-            <article>
+            <article class="experiencia__item">
                 <header>
                     <h3>Atención al cliente</h3>
                     <p>
