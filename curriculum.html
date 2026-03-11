@@ -11,7 +11,7 @@
 <body>
     <header class="encabezado">
         <section class="quiensoy">
-            <h1 class="quiensoy__nombre">Uriel Celli</h1>
+            <h1 class="quiensoy__nombre titulo">Uriel Celli</h1>
             <p class="quiensoy__titulo">Desarrollador Web Jr. | Frontend</p>
         </section>
         <address class="contacto">
@@ -23,8 +23,8 @@
         </address>
     </header>
     <main>
-        <section class="sobremi">
-            <h2 class="sobremi__titulo">Sobre mi</h2>
+        <section class="sobremi ">
+            <h2 class="sobremi__titulo titulo-claro">Sobre mi</h2>
             <p class="sobremi__texto">
                 Desarrollador en formación en la UTN, con fuerte orientación al
                 <strong>pensamiento lógico</strong> y a la
@@ -35,16 +35,28 @@
             </p>
         </section>
         <section class="herramientas">
-                <h2 class="herramientas__titulo">Herramientas</h2>
+                <h2 class="herramientas__titulo titulo-claro">Herramientas</h2>
                 <ol class="herramientas__lista">
-                    <li class="herramientas__html"><img src="img/html-5.webp" alt="HTML"></li>
-                    <li class="herramientas__css"><img src="img/css-3.webp" alt="CSS"></li>
-                    <li class="herramientas__js"><img src="img/js.webp" alt="JavaScript"></li>
-                    <li class="herramientas__c++"><img src="img/c++.webp" alt="C++"></li>
+                    <li class="herramientas__item">
+                        <img src="img/html-5.webp" alt="HTML">
+                        <div class="herramientas__desc">HTML5</div>
+                    </li>
+                    <li class="herramientas__item">
+                        <img src="img/css-3.webp" alt="CSS">
+                        <div class="herramientas__desc">CSS3</div>
+                    </li>
+                    <li class="herramientas__item">
+                        <img src="img/js.webp" alt="JavaScript">
+                        <div class="herramientas__desc">JavaScript</div>
+                    </li>
+                    <li class="herramientas__item">
+                        <img src="img/c++.webp" alt="C++">
+                        <div class="herramientas__desc">C++</div>
+                    </li>
                 </ol>
         </section>
         <section class="experiencia">
-            <h2 class="experiencia__titulo">Experiencia</h2>
+            <h2 class="experiencia__titulo titulo-claro">Experiencia</h2>
             <article class="experiencia__item">
                 <header>
                     <h3 class="experiencia__puesto">Revisor de Presunciones</h3>
@@ -121,7 +133,7 @@
             </article>
         </section>
         <section class="estudios">
-            <h2 class="estudios__titulo">Estudios</h2>
+            <h2 class="estudios__titulo titulo-claro">Estudios</h2>
             <article class="estudios__item">
                 <h3 class="estudios__grado">Tecnicatura en Programación</h3>
                 <p class="estudios__lugar">Universidad Tecnológica Nacional (UTN)</p>
@@ -137,11 +149,11 @@
         </section>
     </main>
     <footer>
-        <h2>Redes sociales</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/urielcelli/" target="_blank" rel="noopener noreferrer">linkedin</a></li>
-            <li><a href="https://github.com/Celur" target="_blank" rel="noopener noreferrer">github</a></li>
-            <li><a href="https://celur.github.io/portfolio-web/" target="_blank" rel="noopener noreferrer">portafolio</a></li>
+        <h2 class="redes__titulo titulo-claro">Redes sociales </h2>
+        <ul class="redes__lista">
+            <li><a href="https://www.linkedin.com/in/urielcelli/" target="_blank" rel="noopener noreferrer"><img class="redes__item" src="img/linkedin.webp" alt="linkedin"></a></li>
+            <li><a href="https://github.com/Celur" target="_blank" rel="noopener noreferrer"><img class="redes__item" src="img/github.webp" alt="github"></a></li>
+            <li><a href="https://celur.github.io/portfolio-web/" target="_blank" rel="noopener noreferrer"><img class="redes__item" src="img/portafolio.webp" alt="portafolio"></a></li>
         </ul>
     </footer>
 </body>

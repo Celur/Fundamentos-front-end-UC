@@ -5,14 +5,16 @@
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     font-size: 18px;
+    color: rgba(0, 0, 0, 0.800);
 }
 
 /* ESTILOS DEL ENCABEZADO*/
 
 .encabezado{
-    border-bottom: solid 3px black;
+    border-bottom: solid 3px #34486f;
+    margin: 2rem;
 }
 
 .quiensoy{
@@ -45,25 +47,57 @@ body{
 }
 
 .herramientas__lista{
-    border: solid 1px black;
+    border: solid 1px #34486f;
     border-radius: 5px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 1.5rem;
+    padding: .5rem;
+}
+
+.herramientas__item{
+    position: relative;
+    
+}
+
+.herramientas__item img{
+    width: 100%;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.herramientas__item:hover img{
+  filter: blur(4px);
+}
+
+.herramientas__desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #34486f;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.herramientas__item:hover .herramientas__desc{
+    opacity: 1;
 }
 
 /* ESTILOS DE EXPERIENCIA LABORAL*/
 .experiencia{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 1fr auto ;
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
     gap: 1rem;
 }
 
+.experiencia__empresa,
+.experiencia__puesto,
 .experiencia__titulo{
-    grid-column: 1 / 4;
     text-align: center;
 }
 
@@ -73,18 +107,17 @@ body{
     gap: 1rem;
     padding: 2rem;
     margin: 0.5rem;
-    border: solid 1px black;
+    border: solid 1px #34486f;
     border-radius: 5px;
 }
 
 .experiencia__descripcion{
     font-weight: bold;
-    text-align: center;
     margin-top: 1rem;
 }
 
 .experiencia__item{
-    border: solid 1px black;
+    border: solid 2px #34486f;
     border-radius: 5px;
     padding: 1rem;
 }
@@ -96,9 +129,7 @@ body{
 }
 
 .sobremi__texto{
-border: solid 1px black;
-border-radius: 5px;
-padding: 1rem;
+    font-size: x-large
 }
 
 /*ESTILOS ESTUDIOS*/
@@ -117,7 +148,7 @@ padding: 1rem;
 }
 
 .estudios__item{
-    border: solid 1px black;
+    border: solid 2px #34486f;
     border-radius: 5px;
     padding: 0.5rem;
 }
@@ -130,4 +161,37 @@ padding: 1rem;
 .estudios__lugar{
     font-weight: bold;
     padding: 0.5rem 0;
+}
+
+/*ESTILOS REDES*/
+
+.redes__titulo{
+    text-align: center;
+}
+
+.redes__lista{
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 1.5rem;
+}
+
+.redes__item{
+    transition: transform 0.3s ease;
+}
+
+.redes__item:hover{
+    transform: scale(1.1);
+
+}
+
+/*ESTILOS GENERALES*/
+
+.titulo{
+    color: #34486f;
+}
+
+.titulo-claro{
+    color: #889EF7;
 }
